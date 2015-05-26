@@ -54,5 +54,23 @@ describe('Javabuzz',function() {
     });
   });
 
+  describe('when playing, says', function() {
+    it('Buzz when a number is divisible by 5', function() {
+       expect(javabuzz.says(5)).toEqual("Buzz");
+    });
+  });
+
+  describe('when playing, says', function() {
+  it('JavaBuzz when a number is divisible by 15', function() {
+     expect(javabuzz.says(15)).toEqual("JavaBuzz");
+  });
+ });
+
+  describe('when playing, says', function() {
+    it('the number when a number is NOT divisible by 3 or 5', function() {
+      expect(javabuzz.says(16)).toEqual(16);
+    });
+  });
+
 });
 
